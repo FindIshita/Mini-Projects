@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(8, 5, 5);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(155, 124, 218);
+    /* color: white; */
+}
+
+nav ul li{
+    padding: 0 12px;
+    color: aliceblue;
+}
+.btn:visited{
+    Color: white;
+    text-decoration: none;
+ }
+ .btn:hover{
+    color: aquamarine;
+ }
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.songList{
+    padding: 50px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.image{
+    opacity: 0.5;
+    width: 100vh;
+    height: 100vh;
+}
+.container{
+    min-height: 100vh;
+    min-width: 100vh;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   /* margin: 23px auto; */
+   width: 100%;
+   /* border-radius: 12px; */
+   padding: 34px;
+   /* background-image: url(spot.jpg); */
+   
+}
+
+.glow {
+    position: relative;
+    padding: 15px;
+    /* top: 45%;
+    left: 40%; */
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ba9473, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+            0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ba9473, 0 0 30px #ba9473, 0 0 40px #83674f, 0 0 50px #6b5440,
+            0 0 60px #413326, 0 0 70px #32281e, 0 0 80px #32281e;
+    }
+}
+
+
+/* 
+.imag{
+    height: 100vh;
+    width: 100vh;
+    overflow: auto;
+    filter: brightness(35%);
+} */
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+#songItem1{
+    margin: 30px;
+}
+
+#songItem2{
+    margin: 15px;
+}
+
+.icons{
+    margin-top: 30px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    padding: 200spx;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    display: inline;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* opacity: 0.8; */
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    /* border-radius: 34px; */
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgba(255, 255, 255, 0.724);
+    }
+  }
